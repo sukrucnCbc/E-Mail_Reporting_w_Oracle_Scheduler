@@ -6,7 +6,7 @@ BEGIN
         email_body CLOB := '';
     BEGIN
         -- En son tarihi al
-        SELECT MAX(AS_OF_DT) INTO max_date FROM dm.vg_dim_eff_cst;
+        SELECT MAX(AS_OF_DT) INTO max_date FROM dm.vg_lorem_ipsum;
 
         -- E-posta içeriği oluşturma
         email_body := 'Bugünkü en son tarih: ' || TO_CHAR(max_date, 'YYYY-MM-DD');
